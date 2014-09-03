@@ -6,6 +6,8 @@ declare -i StartDate=950616
 Today=$(date +"%y%m%d")
 SaveDir=$HOME'/Pictures/APOD/'
 
+test $SaveDir || mkdir -p $SaveDir
+
 for yy in 95 96 97 98 99
 do
 	for mm in 01 02 03 04 05 06 07 08 09 10 11 12
